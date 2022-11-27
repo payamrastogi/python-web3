@@ -3,3 +3,5 @@
 - https://metamask.io/
 - https://etherscan.io/token/0xd26114cd6EE289AccF82350c8d8487fedB8A0C07
 - https://trufflesuite.com/ganache/
+- https://www.youtube.com/playlist?list=PLS5SEs8ZftgVn38FOhXvLc0PoX_0hnJO9
+- https://remix.ethereum.org/#optimize=false&runs=200&evmVersion=null&version=soljson-v0.5.17+commit.d19bba13.js
