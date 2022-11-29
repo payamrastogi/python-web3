@@ -10,7 +10,7 @@ print(web3.isConnected())
 print(web3.eth.blockNumber)
 
 sender_account = "0xD8b2BE965BC55c76A2A566bA530Dc635704CB870"
-# to send cryto currency from sender account
+# to send crypto-currency from sender account
 # to sign transactions using private key
 sender_account_private_key="84fcd53c543b7041e2886fd872377837efce3fee3300e249dfdf843dcf9fa3b0"
 
@@ -24,8 +24,8 @@ tx = {
     'nonce': nonce,
     'to': receiver_account,
     'value': web3.toWei(1, 'ether'),
-    # some of crypto currency you need to pay when you send a transaction
-    # proof of work block chain that has miners on it
+    # some of cryptocurrency you need to pay when you send a transaction
+    # proof of work blockchain that has miners on it
     # miners need to be compensated
     'gas': 2000000,
     'gasPrice': web3.toWei('50', 'gwei')
