@@ -18,3 +18,19 @@ Greeter = web3.eth.contract(abi=abi, bytecode=bytecode)
 
 tx_hash = Greeter.constructor().transact()
 print(tx_hash)
+tx_receipt = web3.eth.wait_for_transaction_receipt(tx_hash)
+
+print(tx_receipt)
+
+# read info from the receipt
+contract = web3.eth.contract(
+    address=tx_receipt.contractAddress,
+    abi=abi
+)
+
+print(contract.functions.getGreeting().call())
+
+tx_hash = contract.functions.setGreeting("New Greeting").transact()
+tx_receipt = web3.eth.wait_for_transaction_receipt(tx_hash)
+
+print(contract.functions.getGreeting().call())
